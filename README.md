@@ -17,15 +17,15 @@ Follow the next steps in order to run this program:
 
     1.	In the command line, locate at this Red-Hat-assignment folder.
     2.	run: py main.py
-        This command will create a local database, a table ('Airlines') and inject the required data (section 2).
+            This command will create a local database, a table ('Airlines') and inject the required data (section 2).
     3.	run: py queries.py
-        This command will display the output for the required queries of section 3.
+            This command will display the output for the required queries of section 3.
 
 After merging 'section 4' branch with the main branch, you'll be able to run the full program.
 The addition for the program will take place by following the next step:
 
     4.	run: py change_name.py
-        This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines'. 'Changes' table contains the columns Changecode,             OldName, NewName and the date of changing. In addition, this command will display the changes that were done.
+        This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines'. 'Changes' table contains the columns Changecode,           OldName, NewName (foreign key references Airlines(name)) and the date of changing. In addition, this command will display the changes that were done.
 
 Assumptions:
 1.	Changing an airline name in the database isn't always Synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
