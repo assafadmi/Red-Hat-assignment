@@ -15,11 +15,11 @@ The third file is located in the 'section 4' branch, which I created a pull requ
 
 Follow the next steps in order to run this program:
 
-  1.	In the command line, locate at this Red-Hat-assignment folder.
+  1.	In the command line, navigate to this Red-Hat-assignment folder.
   
   2.	run: py main.py
             
-  This command will create a local database, a table ('Airlines') and inject the required data (section 2).
+  This command will create a local database, a table ('Airlines') and will inject the required data (section 2).
   
   3.	run: py queries.py
             
