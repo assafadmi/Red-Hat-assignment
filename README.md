@@ -25,7 +25,7 @@ After merging 'section 4' branch with the main branch, you'll be able to run the
 The addition for the program will take place by following the next step:
 
     4.	run: py change_name.py
-        This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines'. 'Changes' table contains the columns Changecode,           OldName, NewName (foreign key references Airlines(name)) and the date of changing. In addition, this command will display the changes that were done.
+            This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines'. 'Changes' table contains the columns                       Changecode, OldName, NewName (foreign key references Airlines(name)) and the date of changing. In addition, this command will display the changes                       that were done.
 
 Assumptions:
 1.	Changing an airline name in the database isn't always Synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
