@@ -43,8 +43,6 @@ def main():
     query5 = """SELECT Year FROM years 
                 WHERE Year NOT IN (SELECT Established FROM Airlines);"""
     
-    
-    
     # create a database connection
     conn = create_connection(path)
     
