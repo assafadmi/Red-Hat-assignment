@@ -1,7 +1,8 @@
 # Red-Hat-assignment
 
 In order to run this program you'll have to use Python and verify that you own sqlite3 package (you should have it if you use Python 3).
-I ran the program on Windows 10.
+
+The program was tested on Windows 10.
 
 I have created 3 python files (which contain SQL queries as well):
 1.	main.py
