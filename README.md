@@ -23,7 +23,7 @@ Follow the next steps in order to run this program:
   
   3.	run: py queries.py
             
-  This command will display the output for the required queries of section 3.
+  This command will run and display the output for the required queries of section 3.
 
 After merging 'section 4' branch with the main branch, you'll be able to run the full program.
 The addition for the program will take place by following the next step:
@@ -37,5 +37,5 @@ The addition for the program will take place by following the next step:
    In addition, this command will display the changes that were done.
 
 Assumptions:
-1.	Changing an airline name in the database isn't always Synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
+1.	Changing an airline name in the database isn't always synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
 2.	We only care about the last change that an airline made. So, 'Changes' table has only one row per airline at most.
