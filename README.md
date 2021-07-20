@@ -30,11 +30,18 @@ The addition for the program will take place by following the next step:
 
    4.	run: py change_name.py
             
-   This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines'.
+   This command will commit the requried change by creating a new table - 'Changes' and by updating 'Airlines' (Lufthansa replaced by Lufthansa Airways).
    
    'Changes' table contains the columns Changecode, OldName, NewName (foreign key references Airlines(name)) and the date of changing.
    
    In addition, this command will display the changes that were done.
+   
+   NOTE: By runnning the following query, we can tell when Lufthansa Airways changed its name:
+   
+   SELECT C.YEAR
+   FROM Changes C JOIN Airlines A
+        ON C.NewName = A.Name
+   WHERE A.Name = 'Lufthansa Airways';
 
 Assumptions:
 1.	Changing an airline name in the database isn't always synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
