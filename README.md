@@ -39,8 +39,11 @@ The addition for the program will take place by following the next step:
    NOTE: By runnning the following query, we can tell when Lufthansa Airways changed its name:
    
    SELECT C.YEAR
+   
    FROM Changes C JOIN Airlines A
-        ON C.NewName = A.Name
+        
+   ON C.NewName = A.Name
+  
    WHERE A.Name = 'Lufthansa Airways';
 
 Assumptions:
