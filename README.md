@@ -5,9 +5,9 @@ In order to run this program you'll have to use Python and verify that you own s
 The program was tested on Windows 10.
 
 I have created 3 python files (which contain SQL queries as well):
-1.	main.py
-2.	queries.py
-3.	change_name.py
+1. main.py
+2. queries.py
+3. change_name.py
 
 The first two files are located in the main branch, as they're the answers for sections 2 and 3. 
 
@@ -38,6 +38,7 @@ The addition for the program will take place by following the next step:
    
    NOTE: By runnning the following query, we can tell when Lufthansa Airways changed its name:
    
+   ```sql
    SELECT C.YEAR
    
    FROM Changes C JOIN Airlines A
@@ -45,6 +46,7 @@ The addition for the program will take place by following the next step:
    ON C.NewName = A.Name
   
    WHERE A.Name = 'Lufthansa Airways';
+   ```
 
 Assumptions:
 1.	Changing an airline name in the database isn't always synchronous with the day the airline actually changed its name, so there is no reason to use the current date       when inserting the relevant details to the 'Changes' table. 
